@@ -10,7 +10,11 @@
 	letter-spacing: 10px;
 
 	animation-name: moveInLeft;
-	animation-duration: 3s; 
+	animation-duration: 3s;
+
+    @media(max-width: 768px) {
+        font-size: 40px;
+    }
 }
 &--sub{
 	display: block;
@@ -24,6 +28,11 @@
     color: transparent;
     animation-duration: 1s;
 	animation-timing-function: ease-out;
+
+        @media(max-width: 768px) {
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
 	}
 }
 .fas{
@@ -36,13 +45,13 @@
 
 .section-about{
     background: $color-gray-light-1;
-    padding: 25rem 0; 
+    padding: 25rem 0;
     margin-top: -20vh;
 }
 .section-project{
    background: $color-gray-light-1;
-    padding: 10rem 0; 
-    margin-top: -20vh; 
+    padding: 10rem 0;
+    margin-top: -20vh;
 }
 .heading-secondary{
     font-size: 2.7rem;
