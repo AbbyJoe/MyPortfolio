@@ -3,6 +3,8 @@
 	text-transform: uppercase;
     margin-bottom: 60px;
 
+    
+
 &--main{
 	display: block;
 	font-size: 50px;
@@ -10,7 +12,13 @@
 	letter-spacing: 10px;
 
 	animation-name: moveInLeft;
-	animation-duration: 3s; 
+    animation-duration: 3s; 
+    
+    @include respond(phone) {
+        letter-spacing: 5px;
+        font-size:  20px;
+
+    }
 }
 &--sub{
 	display: block;
@@ -23,7 +31,11 @@
     -webkit-background-clip: text;
     color: transparent;
     animation-duration: 1s;
-	animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        } 
 	}
 }
 .fas{

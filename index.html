@@ -21,10 +21,10 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>About me</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>accessibilities</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>skillset</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>project</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>contact me</a></li>
+                <li class="navigation__item"><a href="#accessibilities" class="navigation__link"><span>02</span>accessibilities</a></li>
+                <li class="navigation__item"><a href="#skillset" class="navigation__link"><span>03</span>skillset</a></li>
+                <li class="navigation__item"><a href="#project" class="navigation__link"><span>04</span>project</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link"><span>05</span>contact me</a></li>
             </ul>
         </nav>
     </div>
@@ -35,7 +35,7 @@
                 <span class="heading-primary--main">hello! I'm Arigbede Abiodun <br></span>
                 <span class="heading-primary--sub">A frontend developer</span>
             </h1>
-            <a href="#" class="btn btn--white btn--animate">my resume</a>
+            <a href="Arigbede's Resume.pdf" download class="btn btn--white btn--animate">my resume</a>
         </div>
     </header>
     <!-- <section class="grid-test">
@@ -130,7 +130,7 @@
     </section>
     <!-- end-about-me-section -->
     <!-- accessibilities-section -->
-        <section class="section-features u-margin-bottom-big">
+        <section class="section-features u-margin-bottom-big" id="accessibilities">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">accessibilities</h2>
             </div>
@@ -176,7 +176,7 @@
         <!-- end-accessibilities-section -->
         <!-- skillset -->
         <section>
-            <div class="u-center-text u-margin-bottom-big">
+            <div class="u-center-text u-margin-bottom-big" id="skillset">
                 <h2 class="heading-secondary">skillset</h2>
             </div>
             <div class="skill-icons">
@@ -196,7 +196,7 @@
         </section>
         <!-- end-skillset -->
         <!-- projects-section -->
-        <section class="section-project">
+        <section class="section-project" id="project">
             <div class="u-center-text">
                 <h2 class="heading-secondary">projects</h2>
             </div>
@@ -397,7 +397,7 @@
             </div> -->
         </section>
         <!-- end-project-section -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
@@ -420,7 +420,19 @@
         </footer>
     </main>
 <!-- scripts -->
+<script>
+    const navigation__checkbox = document.querySelector(
+        "#navi-toggle"
+    );
+    const navigation__links = document.querySelectorAll(".navigation__link");
+    for (let i = 0; i < navigation__links.length; ++i) {
+        navigation__links[i].addEventListener("click", () => {
+            navigation__checkbox.checked = false;
+        });
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/app.js"></script>
+
 </body>
 </html>
