@@ -13,12 +13,6 @@
 
 	animation-name: moveInLeft;
     animation-duration: 3s; 
-    
-    @include respond(phone) {
-        letter-spacing: 5px;
-        font-size:  20px;
-
-    }
 }
 &--sub{
 	display: block;
@@ -32,10 +26,6 @@
     color: transparent;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    
-        @include respond(phone) {
-            letter-spacing: .5rem;
-        } 
 	}
 }
 .fas{
