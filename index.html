@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/font/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/particles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/145841-avatar-set/png/boy.png">
-    <title>My Portfolio</title>
+    <title>Abiodun | Portfolio</title>
 </head>
 <body>
     <div class="navigation">
@@ -39,74 +40,6 @@
             <a href="Arigbede's Resume.pdf" download class="btn btn--white btn--animate">my resume</a>
         </div>
     </header>
-    <!-- <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    col 1 of 2
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-1-of-3">
-                    col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    col 1 of 3
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-1-of-3">
-                    col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    col 2 of 3
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    col 2 of 4
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    col 3 of 4
-                </div>
-            </div>
-    
-        </section> -->
 <main>
     <!-- about-me-section -->
     <section class="section-about" id="about">
@@ -131,7 +64,7 @@
     </section>
     <!-- end-about-me-section -->
     <!-- accessibilities-section -->
-        <section class="section-features u-margin-bottom-big" id="accessibilities">
+        <section class="section-features u-margin-bottom-big" id="accessibilities" >
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">accessibilities</h2>
             </div>
@@ -176,7 +109,7 @@
         </section>
         <!-- end-accessibilities-section -->
         <!-- skillset -->
-        <section>
+        <section data-aos="fade-up">
             <div class="u-center-text u-margin-bottom-big" id="skillset">
                 <h2 class="heading-secondary">skillset</h2>
             </div>
@@ -198,10 +131,10 @@
         <!-- end-skillset -->
         <!-- projects-section -->
         <section class="section-project" id="project">
-            <div class="u-center-text">
+            <div class="u-center-text" data-aos="fade-up">
                 <h2 class="heading-secondary">projects</h2>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-1-of-3">
                     <div class="container">
                         <div class="card">
@@ -261,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-1-of-3">
                     <div class="container">
                     <div class="card">
@@ -320,7 +253,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-1-of-3">
                     <div class="container">
                         <div class="card">
@@ -379,23 +312,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="project ">
-                <div class="container">
-                    
-                </div>
-            </div>
-            <div class="project ">
-                <div class="container">
-                    
-                </div>
-            </div>
-            <div class="project u-margin-bottom-big">
-                <div class="container">
-                    
-                    
-                    
-                </div>
-            </div> -->
         </section>
         <!-- end-project-section -->
         <footer class="footer" id="contact">
@@ -434,6 +350,12 @@
 </script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/app.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 400,
+        duration: 1000
+    });
+</script>
 </body>
 </html>
