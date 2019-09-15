@@ -12,6 +12,18 @@
 @import "base/mixins";
 
 
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 65.5%;
+}
+
 body{
    font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -39,6 +51,9 @@ h3 {
         clear: both;
     }
 }
+
+
+
 .row{
     max-width: $grid-width;
     // background-color: #1abc9c;
@@ -107,11 +122,12 @@ h3 {
 	}
 	&:hover{
 	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba($color-black, .2);
+    box-shadow: 0 10px 20px rgba($color-black, .2);
+
 
 	&::after{
 	transform: scaleX(1.4) scaleY(1.6);
-	opacity: 0;
+    opacity: 0;
 	}
 }
 	&:active{
@@ -315,3 +331,4 @@ h3 {
 		transform: translateY(0);
 	}
 }
+
