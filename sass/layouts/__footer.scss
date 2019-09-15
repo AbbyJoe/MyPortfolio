@@ -37,6 +37,12 @@
         padding-top: 2rem;
         display: inline-block;
     }
+
+    & .col-1-of-2 {
+        @media(max-width: 768px) {
+            text-align: center;
+        }
+    }
 }
 
 .footer__list .footer__item img {
@@ -45,9 +51,9 @@
 }
  [class^="flaticon-like-1"]:before, [class*=" flaticon-like-1"]:before, [class^="flaticon-like-1"]:after, [class*=" flaticon-like-1"]:after {
       font-family: Flaticon;
-    font-size: 20px; 
+    font-size: 20px;
     font-style: normal;
-	margin: 5px; 
+	margin: 5px;
 	margin-bottom: .5rem;
 	display: inline-block;
     background-image: linear-gradient(to right, #2af598, #009efd);
