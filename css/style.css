@@ -29,7 +29,8 @@ html {
   font-size: 65.3%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 .heading-primary {
   color: #fff;
@@ -42,6 +43,9 @@ body {
     letter-spacing: 10px;
     animation-name: moveInLeft;
     animation-duration: 3s; }
+    @media (max-width: 768px) {
+      .heading-primary--main {
+        font-size: 40px; } }
   .heading-primary--sub {
     display: block;
     font-size: 25px;
@@ -54,6 +58,10 @@ body {
     color: transparent;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 768px) {
+      .heading-primary--sub {
+        font-size: 20px;
+        letter-spacing: 10px; } }
 
 .fas {
   margin-top: 100px;
@@ -63,13 +71,29 @@ body {
 
 .section-about {
   background: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 10rem;
   margin-top: -20vh; }
 
 .section-project {
   background: #f7f7f7;
   padding: 10rem 0;
   margin-top: -20vh; }
+
+@media (max-width: 500px) {
+  .container .card {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .section-project .col-1-of-3:last-child {
+    transform: translateX(30px); } }
+
+@media (max-width: 500px) {
+  .section-project .col-1-of-3:last-child {
+    transform: none; } }
+
+@media (max-width: 500px) {
+  .face {
+    display: inline-block; } }
 
 .heading-secondary {
   font-size: 2.7rem;
@@ -86,7 +110,7 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
-  font-size: 1.6em;
+  font-size: 1.6Fem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px; }
@@ -165,6 +189,9 @@ body {
     border-top: 1px solid #fff;
     padding-top: 2rem;
     display: inline-block; }
+  @media (max-width: 768px) {
+    .footer .col-1-of-2 {
+      text-align: center; } }
 
 .footer__list .footer__item img {
   width: 3rem;
@@ -186,27 +213,39 @@ body {
 
 .navigation__button {
   background-color: #fff;
-  height: 7rem;
-  width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (min-width: 768px) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem;
+      height: 7rem;
+      width: 7rem; } }
 
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 2rem;
+  right: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
   background-image: radial-gradient(#37ecba, #72afd3);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (min-width: 768px) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem;
+      height: 6rem;
+      width: 6rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -258,12 +297,18 @@ body {
 
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem; }
+  margin-top: 2.5rem; }
+  @media (min-width: 768px) {
+    .navigation__icon {
+      margin-top: 3.5rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 3rem;
+    display: inline-block;
+    width: 2.2rem;
     height: 2px;
-    background-color: #333;
-    display: inline-block; }
+    background-color: #333; }
+    @media (min-width: 768px) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 3rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
@@ -299,6 +344,12 @@ body {
   color: #888;
   box-sizing: border-box; }
 
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    text-align: center !important; } }
+
 .about-me-image {
   margin-left: 10rem; }
 
@@ -315,6 +366,12 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media (max-width: 768px) {
+      .row [class^="col-"] {
+        float: none;
+        width: 100% !important;
+        margin: 8rem 0 !important;
+        padding: 0 30px; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) /2); }
   .row .col-1-of-3 {
