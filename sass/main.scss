@@ -78,10 +78,8 @@ h3 {
         @media(max-width: 768px) {
             float: none;
             width: 100% !important;
-
-
-                margin: $gutter-vertical 0 !important;
-                padding: 0 30px;
+            margin: $gutter-vertical 0 !important;
+            padding: 0 30px;
 
         }
       }
@@ -333,3 +331,9 @@ h3 {
 	}
 }
 
+@media(max-width:768px) {
+    .row-inverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
