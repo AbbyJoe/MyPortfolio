@@ -8492,8 +8492,11 @@ textarea.form-control {
   padding: 10% 7%; }
   @media (min-width: 768px) {
     .block-3 .text {
-      width: 60%;
-      padding: 10% 7%; } }
+      width: 100%;
+      padding: 40px;
+      margin: 20px 15px;
+      border-radius: 5px;
+      background-color: rgb(16, 30, 66); } }
 
 .block-3 .text .subheading {
   font-size: 13px;
