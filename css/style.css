@@ -8489,7 +8489,11 @@ textarea.form-control {
 
 .block-3 .text {
   width: 100%;
-  padding: 10% 7%; }
+  padding: 10% 7%;
+  padding: 40px;
+  margin: 20px 0px;
+  border-radius: 5px;
+  background-color: rgb(16, 30, 66); }
   @media (min-width: 768px) {
     .block-3 .text {
       width: 100%;
